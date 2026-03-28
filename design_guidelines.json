@@ -1,0 +1,80 @@
+{
+  "theme": "light",
+  "archetype": "4 (Swiss & High-Contrast)",
+  "typography": {
+    "heading_font": "Chivo",
+    "body_font": "IBM Plex Sans",
+    "heading_styles": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight",
+      "h3": "text-xl sm:text-2xl font-bold tracking-tight",
+      "h4": "text-lg sm:text-xl font-bold tracking-tight"
+    },
+    "body_styles": {
+      "default": "text-base font-normal leading-relaxed",
+      "small": "text-sm font-normal",
+      "overline": "text-xs font-bold uppercase tracking-[0.2em]"
+    }
+  },
+  "colors": {
+    "background": "#FFFFFF",
+    "foreground": "#09090B",
+    "primary": "#09090B",
+    "primary_foreground": "#FFFFFF",
+    "muted": "#F4F4F5",
+    "muted_foreground": "#71717A",
+    "border": "#E4E4E7",
+    "accents": {
+      "red": "#E11D48",
+      "blue": "#2563EB",
+      "yellow": "#FACC15",
+      "green": "#10B981"
+    }
+  },
+  "layout_and_spacing": {
+    "grid_strategy": "Control Room Grid",
+    "base_grid": "grid-cols-1 md:grid-cols-3 lg:grid-cols-4",
+    "gap": "gap-4 md:gap-6",
+    "container_padding": "p-6 lg:p-8",
+    "borders": "1px solid var(--border), no soft shadows. Sharp and technical.",
+    "border_radius": "rounded-none or rounded-sm (max 4px)"
+  },
+  "components": {
+    "cards": "Flat background, 1px subtle border, no shadow. Hover: slight lift and border darkens.",
+    "charts": "Recharts. Use accessible, high-contrast colors (Blue/Red/Green) rather than pastels.",
+    "navigation": "Visible top or side navigation. Sticky header with solid background and hard bottom border.",
+    "alerts": "Use stark contrast (e.g. solid Red background or stark red border) to draw attention."
+  },
+  "motion_and_interactions": {
+    "hover_states": "Clearly define hover states. Text color must adjust explicitly. e.g. hover:bg-zinc-100",
+    "focus_states": "High contrast focus rings. focus:ring-2 focus:ring-black",
+    "transitions": "transition-transform 0.2s ease, transition-colors 0.2s ease"
+  },
+  "media_and_icons": {
+    "icon_library": "@phosphor-icons/react",
+    "images": [
+      {
+        "category": "company_logo",
+        "url": "https://images.unsplash.com/photo-1770210217380-d78a69acdc77?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMHRlY2glMjBjb21wYW55JTIwbG9nbyUyMGlzb2xhdGVkfGVufDB8fHx8MTc3NDcwMjk1MXww&ixlib=rb-4.1.0&q=85",
+        "description": "Abstract tech company logo for header"
+      },
+      {
+        "category": "user_avatar",
+        "url": "https://images.unsplash.com/photo-1649433658557-54cf58577c68?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBwcm9maWxlJTIwcGhvdG8lMjBoZWFkc2hvdHxlbnwwfHx8fDE3NzQ3MDI5NTJ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "User profile avatar for header"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Use Chivo font for all headings, IBM Plex Sans for body text.",
+    "Apply 'Control Room' grid layout for the dashboard: tight gaps, exact alignment.",
+    "Implement Recharts for the Demand Planning Workbench charts.",
+    "Use Phosphor icons for all iconography. (yarn add @phosphor-icons/react)",
+    "Avoid standard 'card' looks. Prefer flat, sharp containers with 1px border. No shadows.",
+    "Ensure all interactive elements have data-testid attributes.",
+    "Top header must have a solid background and a distinct bottom border.",
+    "Forecast Alerts should use high-contrast signal colors (red/yellow).",
+    "Keep colors objective: primarily monochrome with color used exclusively to highlight data points, trends, or alerts.",
+    "Side panel for Demand Drivers must toggle smoothly, using framer-motion or simple CSS transitions."
+  ]
+}

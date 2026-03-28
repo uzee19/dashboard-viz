@@ -1,0 +1,2468 @@
+{
+  "summary": {
+    "total_tests": 11,
+    "passed_tests": 11,
+    "success_rate": 100.0,
+    "timestamp": "2026-03-28T13:09:47.014197"
+  },
+  "detailed_results": [
+    {
+      "test_name": "Root API Endpoint",
+      "endpoint": "",
+      "method": "GET",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_size": 43,
+      "response_data": {
+        "message": "Demand Planning Dashboard API"
+      }
+    },
+    {
+      "test_name": "Get All SKUs",
+      "endpoint": "skus",
+      "method": "GET",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_size": 496,
+      "response_data": [
+        {
+          "item_id": "CUST_003_ITEM_0001"
+        },
+        {
+          "item_id": "CUST_003_ITEM_0002"
+        },
+        {
+          "item_id": "CUST_003_ITEM_0003"
+        },
+        {
+          "item_id": "CUST_003_ITEM_0004"
+        },
+        {
+          "item_id": "CUST_003_ITEM_0005"
+        },
+        {
+          "item_id": "CUST_003_ITEM_0006"
+        },
+        {
+          "item_id": "CUST_003_ITEM_0007"
+        },
+        {
+          "item_id": "CUST_003_ITEM_0008"
+        },
+        {
+          "item_id": "CUST_003_ITEM_0009"
+        },
+        {
+          "item_id": "CUST_003_ITEM_0010"
+        },
+        {
+          "item_id": "CUST_003_ITEM_0011"
+        },
+        {
+          "item_id": "CUST_003_ITEM_0012"
+        },
+        {
+          "item_id": "CUST_003_ITEM_0013"
+        },
+        {
+          "item_id": "CUST_003_ITEM_0014"
+        },
+        {
+          "item_id": "CUST_003_ITEM_0015"
+        }
+      ]
+    },
+    {
+      "test_name": "Get Home Data (52-week chart)",
+      "endpoint": "home-data",
+      "method": "GET",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_size": 3370,
+      "response_data": {
+        "chart_data": [
+          {
+            "timestamp": "2025-01-26",
+            "units_sold": 22120,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-02",
+            "units_sold": 22027,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-09",
+            "units_sold": 20766,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-16",
+            "units_sold": 21485,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-23",
+            "units_sold": 21306,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-02",
+            "units_sold": 21587,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-09",
+            "units_sold": 21996,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-16",
+            "units_sold": 21260,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-23",
+            "units_sold": 22819,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-30",
+            "units_sold": 20953,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-06",
+            "units_sold": 21324,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-13",
+            "units_sold": 22226,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-20",
+            "units_sold": 21443,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-27",
+            "units_sold": 21393,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-04",
+            "units_sold": 20983,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-11",
+            "units_sold": 20897,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-18",
+            "units_sold": 20608,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-25",
+            "units_sold": 20689,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-01",
+            "units_sold": 20868,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-08",
+            "units_sold": 20575,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-15",
+            "units_sold": 20696,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-22",
+            "units_sold": 20758,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-29",
+            "units_sold": 20721,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-06",
+            "units_sold": 20931,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-13",
+            "units_sold": 19987,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-20",
+            "units_sold": 19926,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-27",
+            "units_sold": 20765,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-03",
+            "units_sold": 20240,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-10",
+            "units_sold": 20568,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-17",
+            "units_sold": 20090,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-24",
+            "units_sold": 21935,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-31",
+            "units_sold": 21161,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-07",
+            "units_sold": 19742,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-14",
+            "units_sold": 19935,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-21",
+            "units_sold": 20722,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-28",
+            "units_sold": 20859,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-05",
+            "units_sold": 20539,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-12",
+            "units_sold": 20286,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-19",
+            "units_sold": 20541,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-26",
+            "units_sold": 20870,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-02",
+            "units_sold": 20834,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-09",
+            "units_sold": 20526,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-16",
+            "units_sold": 20354,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-23",
+            "units_sold": 21105,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-30",
+            "units_sold": 20389,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-07",
+            "units_sold": 20682,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-14",
+            "units_sold": 19849,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-21",
+            "units_sold": 19636,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-28",
+            "units_sold": 20458,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2026-01-04",
+            "units_sold": 20315,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2026-01-11",
+            "units_sold": 20227,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2026-01-18",
+            "units_sold": 21230,
+            "type": "forecast"
+          }
+        ]
+      }
+    },
+    {
+      "test_name": "Get Forecast Alerts",
+      "endpoint": "alerts",
+      "method": "GET",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_size": 1392,
+      "response_data": [
+        {
+          "item_id": "CUST_003_ITEM_0001",
+          "severity": "high",
+          "message": "Forecast shows 66.9% increase from recent trends",
+          "deviation_percent": 66.94
+        },
+        {
+          "item_id": "CUST_003_ITEM_0006",
+          "severity": "high",
+          "message": "Forecast shows 59.4% increase from recent trends",
+          "deviation_percent": 59.36
+        },
+        {
+          "item_id": "CUST_003_ITEM_0008",
+          "severity": "high",
+          "message": "Forecast shows 53.7% increase from recent trends",
+          "deviation_percent": 53.68
+        },
+        {
+          "item_id": "CUST_003_ITEM_0007",
+          "severity": "high",
+          "message": "Forecast shows 51.5% increase from recent trends",
+          "deviation_percent": 51.53
+        },
+        {
+          "item_id": "CUST_003_ITEM_0010",
+          "severity": "high",
+          "message": "Forecast shows 49.2% decrease from recent trends",
+          "deviation_percent": -49.15
+        },
+        {
+          "item_id": "CUST_003_ITEM_0015",
+          "severity": "high",
+          "message": "Forecast shows 42.0% decrease from recent trends",
+          "deviation_percent": -42.03
+        },
+        {
+          "item_id": "CUST_003_ITEM_0013",
+          "severity": "high",
+          "message": "Forecast shows 41.6% decrease from recent trends",
+          "deviation_percent": -41.61
+        },
+        {
+          "item_id": "CUST_003_ITEM_0009",
+          "severity": "medium",
+          "message": "Forecast shows 32.1% decrease from recent trends",
+          "deviation_percent": -32.08
+        },
+        {
+          "item_id": "CUST_003_ITEM_0004",
+          "severity": "medium",
+          "message": "Forecast shows 26.6% increase from recent trends",
+          "deviation_percent": 26.57
+        },
+        {
+          "item_id": "CUST_003_ITEM_0005",
+          "severity": "medium",
+          "message": "Forecast shows 26.6% decrease from recent trends",
+          "deviation_percent": -26.57
+        }
+      ]
+    },
+    {
+      "test_name": "Get SKU Detail (CUST_003_ITEM_0001)",
+      "endpoint": "sku/CUST_003_ITEM_0001",
+      "method": "GET",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_size": 4201,
+      "response_data": {
+        "item_id": "CUST_003_ITEM_0001",
+        "chart_data": [
+          {
+            "timestamp": "2025-01-26",
+            "units_sold": 1002,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-02",
+            "units_sold": 785,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-09",
+            "units_sold": 847,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-16",
+            "units_sold": 925,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-23",
+            "units_sold": 1175,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-02",
+            "units_sold": 1176,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-09",
+            "units_sold": 938,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-16",
+            "units_sold": 1157,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-23",
+            "units_sold": 1037,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-30",
+            "units_sold": 770,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-06",
+            "units_sold": 1129,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-13",
+            "units_sold": 745,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-20",
+            "units_sold": 1006,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-27",
+            "units_sold": 1627,
+            "p05": 1138,
+            "p95": 2115,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-04",
+            "units_sold": 1662,
+            "p05": 1163,
+            "p95": 2160,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-11",
+            "units_sold": 1519,
+            "p05": 1063,
+            "p95": 1974,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-18",
+            "units_sold": 1479,
+            "p05": 1035,
+            "p95": 1922,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-25",
+            "units_sold": 1650,
+            "p05": 1155,
+            "p95": 2145,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-01",
+            "units_sold": 1764,
+            "p05": 1234,
+            "p95": 2293,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-08",
+            "units_sold": 1628,
+            "p05": 1139,
+            "p95": 2116,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-15",
+            "units_sold": 1739,
+            "p05": 1217,
+            "p95": 2260,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-22",
+            "units_sold": 1581,
+            "p05": 1106,
+            "p95": 2055,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-29",
+            "units_sold": 1781,
+            "p05": 1246,
+            "p95": 2315,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-06",
+            "units_sold": 1528,
+            "p05": 1069,
+            "p95": 1986,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-13",
+            "units_sold": 1632,
+            "p05": 1142,
+            "p95": 2121,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-20",
+            "units_sold": 1558,
+            "p05": 1090,
+            "p95": 2025,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-27",
+            "units_sold": 1556,
+            "p05": 1089,
+            "p95": 2022,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-03",
+            "units_sold": 1580,
+            "p05": 1106,
+            "p95": 2054,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-10",
+            "units_sold": 1494,
+            "p05": 1045,
+            "p95": 1942,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-17",
+            "units_sold": 1819,
+            "p05": 1273,
+            "p95": 2364,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-24",
+            "units_sold": 1869,
+            "p05": 1308,
+            "p95": 2429,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-31",
+            "units_sold": 1510,
+            "p05": 1057,
+            "p95": 1963,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-07",
+            "units_sold": 1711,
+            "p05": 1197,
+            "p95": 2224,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-14",
+            "units_sold": 1847,
+            "p05": 1292,
+            "p95": 2401,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-21",
+            "units_sold": 1854,
+            "p05": 1297,
+            "p95": 2410,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-28",
+            "units_sold": 1548,
+            "p05": 1083,
+            "p95": 2012,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-05",
+            "units_sold": 1573,
+            "p05": 1101,
+            "p95": 2044,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-12",
+            "units_sold": 1601,
+            "p05": 1120,
+            "p95": 2081,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-19",
+            "units_sold": 1648,
+            "p05": 1153,
+            "p95": 2142,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-26",
+            "units_sold": 1651,
+            "p05": 1155,
+            "p95": 2146,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-02",
+            "units_sold": 1870,
+            "p05": 1309,
+            "p95": 2431,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-09",
+            "units_sold": 1650,
+            "p05": 1155,
+            "p95": 2145,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-16",
+            "units_sold": 1849,
+            "p05": 1294,
+            "p95": 2403,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-23",
+            "units_sold": 1620,
+            "p05": 1134,
+            "p95": 2106,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-30",
+            "units_sold": 1507,
+            "p05": 1054,
+            "p95": 1959,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-07",
+            "units_sold": 1575,
+            "p05": 1102,
+            "p95": 2047,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-14",
+            "units_sold": 1593,
+            "p05": 1115,
+            "p95": 2070,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-21",
+            "units_sold": 1847,
+            "p05": 1292,
+            "p95": 2401,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-28",
+            "units_sold": 1590,
+            "p05": 1113,
+            "p95": 2067,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2026-01-04",
+            "units_sold": 1523,
+            "p05": 1066,
+            "p95": 1979,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2026-01-11",
+            "units_sold": 1489,
+            "p05": 1042,
+            "p95": 1935,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2026-01-18",
+            "units_sold": 1508,
+            "p05": 1055,
+            "p95": 1960,
+            "type": "forecast"
+          }
+        ]
+      }
+    },
+    {
+      "test_name": "Get Demand Drivers (CUST_003_ITEM_0001)",
+      "endpoint": "sku/CUST_003_ITEM_0001/demand-drivers",
+      "method": "GET",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_size": 4682,
+      "response_data": {
+        "item_id": "CUST_003_ITEM_0001",
+        "demand_drivers": [
+          {
+            "timestamp": "2025-01-26",
+            "avg_unit_price": 88.67,
+            "cust_instock": 0.913,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-02",
+            "avg_unit_price": 94.34,
+            "cust_instock": 0.732,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-09",
+            "avg_unit_price": 88.86,
+            "cust_instock": 0.701,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-16",
+            "avg_unit_price": 92.15,
+            "cust_instock": 0.945,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-23",
+            "avg_unit_price": 90.22,
+            "cust_instock": 0.843,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-02",
+            "avg_unit_price": 94.64,
+            "cust_instock": 0.811,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-09",
+            "avg_unit_price": 93.59,
+            "cust_instock": 0.847,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-16",
+            "avg_unit_price": 94.06,
+            "cust_instock": 0.812,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-23",
+            "avg_unit_price": 89.72,
+            "cust_instock": 0.825,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-30",
+            "avg_unit_price": 92.13,
+            "cust_instock": 0.74,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-06",
+            "avg_unit_price": 94.82,
+            "cust_instock": 0.747,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-13",
+            "avg_unit_price": 90.3,
+            "cust_instock": 0.962,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-20",
+            "avg_unit_price": 95.98,
+            "cust_instock": 0.731,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-27",
+            "avg_unit_price": 13.12,
+            "cust_instock": 0.936,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-04",
+            "avg_unit_price": 13.51,
+            "cust_instock": 0.803,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-11",
+            "avg_unit_price": 13.48,
+            "cust_instock": 0.853,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-18",
+            "avg_unit_price": 9.29,
+            "cust_instock": 0.798,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-25",
+            "avg_unit_price": 9.12,
+            "cust_instock": 0.787,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-01",
+            "avg_unit_price": 8.98,
+            "cust_instock": 0.937,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-08",
+            "avg_unit_price": 11.43,
+            "cust_instock": 0.806,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-15",
+            "avg_unit_price": 9.42,
+            "cust_instock": 0.791,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-22",
+            "avg_unit_price": 9.94,
+            "cust_instock": 0.949,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-29",
+            "avg_unit_price": 10.24,
+            "cust_instock": 0.764,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-06",
+            "avg_unit_price": 9.97,
+            "cust_instock": 0.787,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-13",
+            "avg_unit_price": 9.67,
+            "cust_instock": 0.916,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-20",
+            "avg_unit_price": 9.84,
+            "cust_instock": 0.793,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-27",
+            "avg_unit_price": 8.24,
+            "cust_instock": 0.757,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-03",
+            "avg_unit_price": 8.25,
+            "cust_instock": 0.911,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-10",
+            "avg_unit_price": 9.06,
+            "cust_instock": 0.797,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-17",
+            "avg_unit_price": 11.0,
+            "cust_instock": 0.937,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-24",
+            "avg_unit_price": 11.34,
+            "cust_instock": 0.9,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-31",
+            "avg_unit_price": 8.53,
+            "cust_instock": 0.756,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-07",
+            "avg_unit_price": 9.9,
+            "cust_instock": 0.783,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-14",
+            "avg_unit_price": 8.18,
+            "cust_instock": 0.931,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-21",
+            "avg_unit_price": 10.06,
+            "cust_instock": 0.802,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-28",
+            "avg_unit_price": 10.99,
+            "cust_instock": 0.845,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-05",
+            "avg_unit_price": 10.03,
+            "cust_instock": 0.943,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-12",
+            "avg_unit_price": 10.36,
+            "cust_instock": 0.818,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-19",
+            "avg_unit_price": 11.9,
+            "cust_instock": 0.847,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-26",
+            "avg_unit_price": 10.51,
+            "cust_instock": 0.803,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-02",
+            "avg_unit_price": 13.52,
+            "cust_instock": 0.938,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-09",
+            "avg_unit_price": 12.7,
+            "cust_instock": 0.762,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-16",
+            "avg_unit_price": 12.33,
+            "cust_instock": 0.915,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-23",
+            "avg_unit_price": 11.83,
+            "cust_instock": 0.753,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-30",
+            "avg_unit_price": 13.29,
+            "cust_instock": 0.856,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-07",
+            "avg_unit_price": 11.13,
+            "cust_instock": 0.865,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-14",
+            "avg_unit_price": 9.62,
+            "cust_instock": 0.803,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-21",
+            "avg_unit_price": 12.15,
+            "cust_instock": 0.924,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-28",
+            "avg_unit_price": 12.09,
+            "cust_instock": 0.754,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2026-01-04",
+            "avg_unit_price": 10.51,
+            "cust_instock": 0.939,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2026-01-11",
+            "avg_unit_price": 13.41,
+            "cust_instock": 0.839,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2026-01-18",
+            "avg_unit_price": 13.03,
+            "cust_instock": 0.831,
+            "type": "forecast"
+          }
+        ]
+      }
+    },
+    {
+      "test_name": "Get SKU Detail (CUST_003_ITEM_0002)",
+      "endpoint": "sku/CUST_003_ITEM_0002",
+      "method": "GET",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_size": 4159,
+      "response_data": {
+        "item_id": "CUST_003_ITEM_0002",
+        "chart_data": [
+          {
+            "timestamp": "2025-01-26",
+            "units_sold": 1508,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-02",
+            "units_sold": 1345,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-09",
+            "units_sold": 1555,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-16",
+            "units_sold": 1257,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-23",
+            "units_sold": 1336,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-02",
+            "units_sold": 1192,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-09",
+            "units_sold": 1411,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-16",
+            "units_sold": 1512,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-23",
+            "units_sold": 1455,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-30",
+            "units_sold": 1338,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-06",
+            "units_sold": 1680,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-13",
+            "units_sold": 1228,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-20",
+            "units_sold": 1368,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-27",
+            "units_sold": 1184,
+            "p05": 828,
+            "p95": 1539,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-04",
+            "units_sold": 1237,
+            "p05": 865,
+            "p95": 1608,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-11",
+            "units_sold": 1046,
+            "p05": 732,
+            "p95": 1359,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-18",
+            "units_sold": 1193,
+            "p05": 835,
+            "p95": 1550,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-25",
+            "units_sold": 1308,
+            "p05": 915,
+            "p95": 1700,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-01",
+            "units_sold": 987,
+            "p05": 690,
+            "p95": 1283,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-08",
+            "units_sold": 1305,
+            "p05": 913,
+            "p95": 1696,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-15",
+            "units_sold": 1120,
+            "p05": 784,
+            "p95": 1456,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-22",
+            "units_sold": 1086,
+            "p05": 760,
+            "p95": 1411,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-29",
+            "units_sold": 1283,
+            "p05": 898,
+            "p95": 1667,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-06",
+            "units_sold": 991,
+            "p05": 693,
+            "p95": 1288,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-13",
+            "units_sold": 1007,
+            "p05": 704,
+            "p95": 1309,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-20",
+            "units_sold": 1169,
+            "p05": 818,
+            "p95": 1519,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-27",
+            "units_sold": 1200,
+            "p05": 840,
+            "p95": 1560,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-03",
+            "units_sold": 952,
+            "p05": 666,
+            "p95": 1237,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-10",
+            "units_sold": 1235,
+            "p05": 864,
+            "p95": 1605,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-17",
+            "units_sold": 1010,
+            "p05": 707,
+            "p95": 1313,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-24",
+            "units_sold": 1216,
+            "p05": 851,
+            "p95": 1580,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-31",
+            "units_sold": 1270,
+            "p05": 889,
+            "p95": 1651,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-07",
+            "units_sold": 949,
+            "p05": 664,
+            "p95": 1233,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-14",
+            "units_sold": 933,
+            "p05": 653,
+            "p95": 1212,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-21",
+            "units_sold": 1204,
+            "p05": 842,
+            "p95": 1565,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-28",
+            "units_sold": 1314,
+            "p05": 919,
+            "p95": 1708,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-05",
+            "units_sold": 1008,
+            "p05": 705,
+            "p95": 1310,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-12",
+            "units_sold": 1086,
+            "p05": 760,
+            "p95": 1411,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-19",
+            "units_sold": 1042,
+            "p05": 729,
+            "p95": 1354,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-26",
+            "units_sold": 1025,
+            "p05": 717,
+            "p95": 1332,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-02",
+            "units_sold": 926,
+            "p05": 648,
+            "p95": 1203,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-09",
+            "units_sold": 971,
+            "p05": 679,
+            "p95": 1262,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-16",
+            "units_sold": 991,
+            "p05": 693,
+            "p95": 1288,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-23",
+            "units_sold": 1126,
+            "p05": 788,
+            "p95": 1463,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-30",
+            "units_sold": 993,
+            "p05": 695,
+            "p95": 1290,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-07",
+            "units_sold": 1242,
+            "p05": 869,
+            "p95": 1614,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-14",
+            "units_sold": 1075,
+            "p05": 752,
+            "p95": 1397,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-21",
+            "units_sold": 1034,
+            "p05": 723,
+            "p95": 1344,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-28",
+            "units_sold": 1146,
+            "p05": 802,
+            "p95": 1489,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2026-01-04",
+            "units_sold": 1124,
+            "p05": 786,
+            "p95": 1461,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2026-01-11",
+            "units_sold": 1052,
+            "p05": 736,
+            "p95": 1367,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2026-01-18",
+            "units_sold": 1302,
+            "p05": 911,
+            "p95": 1692,
+            "type": "forecast"
+          }
+        ]
+      }
+    },
+    {
+      "test_name": "Get Demand Drivers (CUST_003_ITEM_0002)",
+      "endpoint": "sku/CUST_003_ITEM_0002/demand-drivers",
+      "method": "GET",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_size": 4690,
+      "response_data": {
+        "item_id": "CUST_003_ITEM_0002",
+        "demand_drivers": [
+          {
+            "timestamp": "2025-01-26",
+            "avg_unit_price": 58.62,
+            "cust_instock": 0.841,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-02",
+            "avg_unit_price": 63.76,
+            "cust_instock": 0.895,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-09",
+            "avg_unit_price": 55.36,
+            "cust_instock": 0.98,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-16",
+            "avg_unit_price": 63.04,
+            "cust_instock": 0.859,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-23",
+            "avg_unit_price": 59.8,
+            "cust_instock": 0.76,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-02",
+            "avg_unit_price": 60.58,
+            "cust_instock": 0.902,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-09",
+            "avg_unit_price": 57.9,
+            "cust_instock": 0.892,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-16",
+            "avg_unit_price": 63.12,
+            "cust_instock": 0.921,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-23",
+            "avg_unit_price": 56.46,
+            "cust_instock": 0.983,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-30",
+            "avg_unit_price": 61.65,
+            "cust_instock": 0.794,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-06",
+            "avg_unit_price": 64.06,
+            "cust_instock": 0.813,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-13",
+            "avg_unit_price": 57.07,
+            "cust_instock": 0.931,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-20",
+            "avg_unit_price": 62.55,
+            "cust_instock": 0.813,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-27",
+            "avg_unit_price": 82.37,
+            "cust_instock": 0.9,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-04",
+            "avg_unit_price": 82.75,
+            "cust_instock": 0.826,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-11",
+            "avg_unit_price": 78.2,
+            "cust_instock": 0.894,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-18",
+            "avg_unit_price": 81.41,
+            "cust_instock": 0.936,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-25",
+            "avg_unit_price": 80.5,
+            "cust_instock": 0.757,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-01",
+            "avg_unit_price": 77.31,
+            "cust_instock": 0.928,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-08",
+            "avg_unit_price": 81.28,
+            "cust_instock": 0.893,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-15",
+            "avg_unit_price": 80.0,
+            "cust_instock": 0.758,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-22",
+            "avg_unit_price": 80.5,
+            "cust_instock": 0.815,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-29",
+            "avg_unit_price": 78.95,
+            "cust_instock": 0.844,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-06",
+            "avg_unit_price": 77.02,
+            "cust_instock": 0.842,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-13",
+            "avg_unit_price": 78.27,
+            "cust_instock": 0.803,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-20",
+            "avg_unit_price": 82.34,
+            "cust_instock": 0.83,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-27",
+            "avg_unit_price": 77.98,
+            "cust_instock": 0.769,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-03",
+            "avg_unit_price": 81.63,
+            "cust_instock": 0.91,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-10",
+            "avg_unit_price": 80.93,
+            "cust_instock": 0.835,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-17",
+            "avg_unit_price": 77.05,
+            "cust_instock": 0.923,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-24",
+            "avg_unit_price": 79.44,
+            "cust_instock": 0.771,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-31",
+            "avg_unit_price": 79.36,
+            "cust_instock": 0.876,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-07",
+            "avg_unit_price": 80.52,
+            "cust_instock": 0.792,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-14",
+            "avg_unit_price": 80.98,
+            "cust_instock": 0.92,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-21",
+            "avg_unit_price": 81.58,
+            "cust_instock": 0.86,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-28",
+            "avg_unit_price": 79.33,
+            "cust_instock": 0.814,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-05",
+            "avg_unit_price": 79.81,
+            "cust_instock": 0.823,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-12",
+            "avg_unit_price": 79.88,
+            "cust_instock": 0.768,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-19",
+            "avg_unit_price": 82.15,
+            "cust_instock": 0.886,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-26",
+            "avg_unit_price": 77.31,
+            "cust_instock": 0.771,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-02",
+            "avg_unit_price": 80.27,
+            "cust_instock": 0.868,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-09",
+            "avg_unit_price": 80.21,
+            "cust_instock": 0.949,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-16",
+            "avg_unit_price": 80.02,
+            "cust_instock": 0.797,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-23",
+            "avg_unit_price": 77.08,
+            "cust_instock": 0.781,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-30",
+            "avg_unit_price": 81.97,
+            "cust_instock": 0.834,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-07",
+            "avg_unit_price": 80.93,
+            "cust_instock": 0.865,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-14",
+            "avg_unit_price": 78.95,
+            "cust_instock": 0.825,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-21",
+            "avg_unit_price": 82.74,
+            "cust_instock": 0.84,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-28",
+            "avg_unit_price": 79.93,
+            "cust_instock": 0.936,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2026-01-04",
+            "avg_unit_price": 81.94,
+            "cust_instock": 0.818,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2026-01-11",
+            "avg_unit_price": 81.08,
+            "cust_instock": 0.854,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2026-01-18",
+            "avg_unit_price": 80.61,
+            "cust_instock": 0.789,
+            "type": "forecast"
+          }
+        ]
+      }
+    },
+    {
+      "test_name": "Get SKU Detail (CUST_003_ITEM_0003)",
+      "endpoint": "sku/CUST_003_ITEM_0003",
+      "method": "GET",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_size": 4198,
+      "response_data": {
+        "item_id": "CUST_003_ITEM_0003",
+        "chart_data": [
+          {
+            "timestamp": "2025-01-26",
+            "units_sold": 1864,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-02",
+            "units_sold": 1794,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-09",
+            "units_sold": 1578,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-16",
+            "units_sold": 1764,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-23",
+            "units_sold": 1630,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-02",
+            "units_sold": 1609,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-09",
+            "units_sold": 1987,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-16",
+            "units_sold": 1586,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-23",
+            "units_sold": 1936,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-30",
+            "units_sold": 1841,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-06",
+            "units_sold": 1566,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-13",
+            "units_sold": 1993,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-20",
+            "units_sold": 1624,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-27",
+            "units_sold": 1646,
+            "p05": 1152,
+            "p95": 2139,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-04",
+            "units_sold": 1706,
+            "p05": 1194,
+            "p95": 2217,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-11",
+            "units_sold": 1450,
+            "p05": 1014,
+            "p95": 1885,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-18",
+            "units_sold": 1549,
+            "p05": 1084,
+            "p95": 2013,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-25",
+            "units_sold": 1522,
+            "p05": 1065,
+            "p95": 1978,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-01",
+            "units_sold": 1397,
+            "p05": 977,
+            "p95": 1816,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-08",
+            "units_sold": 1507,
+            "p05": 1054,
+            "p95": 1959,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-15",
+            "units_sold": 1697,
+            "p05": 1187,
+            "p95": 2206,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-22",
+            "units_sold": 1561,
+            "p05": 1092,
+            "p95": 2029,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-29",
+            "units_sold": 1605,
+            "p05": 1123,
+            "p95": 2086,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-06",
+            "units_sold": 1712,
+            "p05": 1198,
+            "p95": 2225,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-13",
+            "units_sold": 1427,
+            "p05": 998,
+            "p95": 1855,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-20",
+            "units_sold": 1433,
+            "p05": 1003,
+            "p95": 1862,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-27",
+            "units_sold": 1578,
+            "p05": 1104,
+            "p95": 2051,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-03",
+            "units_sold": 1734,
+            "p05": 1213,
+            "p95": 2254,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-10",
+            "units_sold": 1648,
+            "p05": 1153,
+            "p95": 2142,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-17",
+            "units_sold": 1539,
+            "p05": 1077,
+            "p95": 2000,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-24",
+            "units_sold": 1468,
+            "p05": 1027,
+            "p95": 1908,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-31",
+            "units_sold": 1528,
+            "p05": 1069,
+            "p95": 1986,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-07",
+            "units_sold": 1526,
+            "p05": 1068,
+            "p95": 1983,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-14",
+            "units_sold": 1506,
+            "p05": 1054,
+            "p95": 1957,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-21",
+            "units_sold": 1374,
+            "p05": 961,
+            "p95": 1786,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-28",
+            "units_sold": 1383,
+            "p05": 968,
+            "p95": 1797,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-05",
+            "units_sold": 1509,
+            "p05": 1056,
+            "p95": 1961,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-12",
+            "units_sold": 1499,
+            "p05": 1049,
+            "p95": 1948,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-19",
+            "units_sold": 1641,
+            "p05": 1148,
+            "p95": 2133,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-26",
+            "units_sold": 1562,
+            "p05": 1093,
+            "p95": 2030,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-02",
+            "units_sold": 1617,
+            "p05": 1131,
+            "p95": 2102,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-09",
+            "units_sold": 1398,
+            "p05": 978,
+            "p95": 1817,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-16",
+            "units_sold": 1560,
+            "p05": 1092,
+            "p95": 2028,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-23",
+            "units_sold": 1398,
+            "p05": 978,
+            "p95": 1817,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-30",
+            "units_sold": 1554,
+            "p05": 1087,
+            "p95": 2020,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-07",
+            "units_sold": 1470,
+            "p05": 1029,
+            "p95": 1911,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-14",
+            "units_sold": 1453,
+            "p05": 1017,
+            "p95": 1888,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-21",
+            "units_sold": 1420,
+            "p05": 993,
+            "p95": 1846,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-28",
+            "units_sold": 1398,
+            "p05": 978,
+            "p95": 1817,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2026-01-04",
+            "units_sold": 1413,
+            "p05": 989,
+            "p95": 1836,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2026-01-11",
+            "units_sold": 1666,
+            "p05": 1166,
+            "p95": 2165,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2026-01-18",
+            "units_sold": 1615,
+            "p05": 1130,
+            "p95": 2099,
+            "type": "forecast"
+          }
+        ]
+      }
+    },
+    {
+      "test_name": "Get Demand Drivers (CUST_003_ITEM_0003)",
+      "endpoint": "sku/CUST_003_ITEM_0003/demand-drivers",
+      "method": "GET",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_size": 4699,
+      "response_data": {
+        "item_id": "CUST_003_ITEM_0003",
+        "demand_drivers": [
+          {
+            "timestamp": "2025-01-26",
+            "avg_unit_price": 52.62,
+            "cust_instock": 0.845,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-02",
+            "avg_unit_price": 49.25,
+            "cust_instock": 0.737,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-09",
+            "avg_unit_price": 46.87,
+            "cust_instock": 0.82,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-16",
+            "avg_unit_price": 45.54,
+            "cust_instock": 0.792,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-02-23",
+            "avg_unit_price": 51.7,
+            "cust_instock": 0.906,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-02",
+            "avg_unit_price": 45.86,
+            "cust_instock": 0.784,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-09",
+            "avg_unit_price": 46.13,
+            "cust_instock": 0.837,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-16",
+            "avg_unit_price": 47.29,
+            "cust_instock": 0.836,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-23",
+            "avg_unit_price": 48.2,
+            "cust_instock": 0.772,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-03-30",
+            "avg_unit_price": 48.14,
+            "cust_instock": 0.878,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-06",
+            "avg_unit_price": 52.35,
+            "cust_instock": 0.956,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-13",
+            "avg_unit_price": 44.85,
+            "cust_instock": 0.779,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-20",
+            "avg_unit_price": 47.17,
+            "cust_instock": 0.777,
+            "type": "historical"
+          },
+          {
+            "timestamp": "2025-04-27",
+            "avg_unit_price": 63.51,
+            "cust_instock": 0.792,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-04",
+            "avg_unit_price": 67.6,
+            "cust_instock": 0.836,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-11",
+            "avg_unit_price": 63.68,
+            "cust_instock": 0.908,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-18",
+            "avg_unit_price": 67.61,
+            "cust_instock": 0.757,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-05-25",
+            "avg_unit_price": 65.23,
+            "cust_instock": 0.905,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-01",
+            "avg_unit_price": 62.98,
+            "cust_instock": 0.878,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-08",
+            "avg_unit_price": 63.68,
+            "cust_instock": 0.802,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-15",
+            "avg_unit_price": 67.28,
+            "cust_instock": 0.794,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-22",
+            "avg_unit_price": 62.95,
+            "cust_instock": 0.752,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-06-29",
+            "avg_unit_price": 62.15,
+            "cust_instock": 0.797,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-06",
+            "avg_unit_price": 65.83,
+            "cust_instock": 0.837,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-13",
+            "avg_unit_price": 62.87,
+            "cust_instock": 0.876,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-20",
+            "avg_unit_price": 64.16,
+            "cust_instock": 0.839,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-07-27",
+            "avg_unit_price": 62.84,
+            "cust_instock": 0.903,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-03",
+            "avg_unit_price": 62.44,
+            "cust_instock": 0.869,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-10",
+            "avg_unit_price": 64.06,
+            "cust_instock": 0.81,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-17",
+            "avg_unit_price": 62.15,
+            "cust_instock": 0.907,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-24",
+            "avg_unit_price": 66.74,
+            "cust_instock": 0.757,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-08-31",
+            "avg_unit_price": 66.19,
+            "cust_instock": 0.757,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-07",
+            "avg_unit_price": 65.43,
+            "cust_instock": 0.92,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-14",
+            "avg_unit_price": 65.66,
+            "cust_instock": 0.818,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-21",
+            "avg_unit_price": 65.11,
+            "cust_instock": 0.915,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-09-28",
+            "avg_unit_price": 63.72,
+            "cust_instock": 0.804,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-05",
+            "avg_unit_price": 62.86,
+            "cust_instock": 0.912,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-12",
+            "avg_unit_price": 64.11,
+            "cust_instock": 0.817,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-19",
+            "avg_unit_price": 67.77,
+            "cust_instock": 0.772,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-10-26",
+            "avg_unit_price": 63.83,
+            "cust_instock": 0.879,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-02",
+            "avg_unit_price": 62.72,
+            "cust_instock": 0.938,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-09",
+            "avg_unit_price": 62.51,
+            "cust_instock": 0.832,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-16",
+            "avg_unit_price": 67.91,
+            "cust_instock": 0.915,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-23",
+            "avg_unit_price": 65.56,
+            "cust_instock": 0.938,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-11-30",
+            "avg_unit_price": 63.83,
+            "cust_instock": 0.933,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-07",
+            "avg_unit_price": 66.51,
+            "cust_instock": 0.771,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-14",
+            "avg_unit_price": 64.66,
+            "cust_instock": 0.781,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-21",
+            "avg_unit_price": 64.81,
+            "cust_instock": 0.889,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2025-12-28",
+            "avg_unit_price": 65.16,
+            "cust_instock": 0.818,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2026-01-04",
+            "avg_unit_price": 65.76,
+            "cust_instock": 0.889,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2026-01-11",
+            "avg_unit_price": 65.28,
+            "cust_instock": 0.931,
+            "type": "forecast"
+          },
+          {
+            "timestamp": "2026-01-18",
+            "avg_unit_price": 63.37,
+            "cust_instock": 0.796,
+            "type": "forecast"
+          }
+        ]
+      }
+    },
+    {
+      "test_name": "Get Invalid SKU Detail",
+      "endpoint": "sku/INVALID_SKU_ID",
+      "method": "GET",
+      "expected_status": 404,
+      "actual_status": 404,
+      "success": true,
+      "response_size": 26,
+      "response_data": {
+        "detail": "SKU not found"
+      }
+    }
+  ]
+}

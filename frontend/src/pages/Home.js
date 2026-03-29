@@ -104,7 +104,7 @@ const Home = () => {
               <img 
                 src="https://customer-assets.emergentagent.com/job_build-dash-26/artifacts/29or6fl6_image.png" 
                 alt="Demand Planning Logo"
-                className="h-12"
+                className="h-8"
                 style={{ objectFit: 'contain' }}
               />
             </div>

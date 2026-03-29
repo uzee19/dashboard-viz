@@ -112,12 +112,18 @@ const SKUDetail = () => {
               >
                 <ArrowLeft size={24} color="#09090B" weight="bold" />
               </button>
-              <h1
-                className="text-2xl font-black tracking-tight"
+              <img 
+                src="https://customer-assets.emergentagent.com/job_build-dash-26/artifacts/29or6fl6_image.png" 
+                alt="Demand Planning Logo"
+                className="h-10"
+                style={{ objectFit: 'contain' }}
+              />
+              <span
+                className="text-lg font-bold tracking-tight"
                 style={{ fontFamily: 'Chivo', color: '#09090B' }}
               >
-                Demand Planning Workbench
-              </h1>
+                Workbench
+              </span>
             </div>
 
             <button

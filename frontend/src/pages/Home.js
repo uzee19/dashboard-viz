@@ -100,14 +100,13 @@ const Home = () => {
       >
         <div className="px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-4">
-              <div className="w-10 h-10 rounded-sm" style={{ background: '#09090B' }} />
-              <h1
-                className="text-2xl font-black tracking-tight"
-                style={{ fontFamily: 'Chivo', color: '#09090B' }}
-              >
-                Demand Planning
-              </h1>
+            <div className="flex items-center gap-2">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_build-dash-26/artifacts/29or6fl6_image.png" 
+                alt="Demand Planning Logo"
+                className="h-12"
+                style={{ objectFit: 'contain' }}
+              />
             </div>
 
             {/* Search Bar */}

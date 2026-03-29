@@ -2,7 +2,6 @@
 
 A full-stack web application for retail supply chain teams to monitor weekly sales performance and review AI-generated forecasts at SKU (Stock Keeping Unit) level.
 
-![Demand Planning Dashboard](https://customer-assets.emergentagent.com/job_build-dash-26/artifacts/29or6fl6_image.png)
 
 ## 📋 Table of Contents
 
